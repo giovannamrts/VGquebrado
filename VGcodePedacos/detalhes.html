@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block conteudo %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/styleDetalhes.css')}}">
+
+<section class="detalhes">
+    <div class="detalhes-container">
+
+        <div class="detalhes-imagem">
+            {% if produto.imagens and produto.imagens[0] %}
+                <img src="{{ url_for('get_img', id_imagem=produto.imagens[0].id_imagem) }}" 
+                     alt="{{ produto.nome_produto }}">
+            {% else %}
+                <img src="{{ url_for('static', filename='imagens/capa_padrao.jpeg') }}" 
+                     alt="{{ produto.nome_produto }}">
+            {% endif %}
+        </div>
+
+        <div class="detalhes-info">
+            <h2 class="titulo">{{ produto.nome_produto }}</h2>
+            <p class="marca">{{ produto.marca_produto }}</p>
+
+            <p class="descricao">
+                {{ produto.descricao_produto }}
+            </p>
+
+            <p class="preco">Lance inicial:  
+                <span>R$ {{ produto.preco_produto }}</span>
+            </p>
+
+            <a href="#" class="btn-lance">
+                Dar um lance
+            </a>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,151 @@
+/* header */
+
+.header-vintage {
+  width: 100%;
+  background: #fffdf8;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e8e2d9;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logotipo {
+  height: 70px;
+  transition: .2s ease;
+}
+
+.logotipo:hover {
+  transform: scale(1.03);
+}
+
+/* parte de pesquisar */
+
+.barra-pesquisa-container {
+  flex: 1;
+  max-width: 500px;
+  margin: 0 40px;
+}
+
+.form-pesquisa {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1.5px solid #d9cec4;
+  transition: .3s;
+}
+
+.form-pesquisa:hover {
+  border-color: #b08b7d;
+}
+
+.input-pesquisa {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 17px;
+}
+
+.btn-pesquisa {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 19px;
+  color: #8f300a;
+  transition: .2s;
+}
+
+.btn-pesquisa:hover {
+  transform: scale(1.2);
+}
+
+/* botão minha conta */
+
+.icon-conta i {
+  font-size: 23px;
+  color: #4d1814;
+  transition: .2s;
+}
+
+.icon-conta i:hover {
+  transform: scale(1.12);
+  color: #8f300a;
+}
+
+/* Aquele botão de cadastro */
+#myBtn {
+  background: #4d1814;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  color: #fffdf8;
+  cursor: pointer;
+  font-size: 17px;
+  transition: .3s;
+}
+
+#myBtn:hover {
+  background: #8f300a;
+}
+
+/* Menu*/
+.w3-button.w3-xlarge {
+  color: #4d1814 !important;
+  font-size: 28px !important;
+  padding: 5px 12px !important;
+  border-radius: 8px;
+  transition: .2s;
+}
+
+.w3-button.w3-xlarge:hover {
+  background: #f4ece5 !important;
+}
+
+/* Essa parte é do footer(se ficar mt diferente pode apagar ta)*/
+.rodape {
+  background-color: #fffcf9;
+  padding: 55px 80px;
+  border-top: 2px solid #e8e2d9;
+  color: #3a2c28;
+}
+
+.rodape-secao h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4d1814;
+  margin-bottom: 15px;
+}
+
+.rodape-secao a {
+  color: #3b3029;
+  font-size: 16px;
+  transition: .3s;
+}
+
+.rodape-secao a:hover {
+  color: #8f300a;
+  margin-left: 3px;
+}
+
+.social-link i {
+  font-size: 22px;
+}
+
+.social-link i:hover {
+  color: #8f300a;
+  transform: scale(1.15);
+}
+
+.direitos {
+  margin-top: 35px;
+  font-size: 14px;
+  color: #655d57;
+}
+

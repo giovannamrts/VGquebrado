@@ -1,0 +1,87 @@
+/* Card */
+.card-produto.clean {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #e6e2da;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.card-produto.clean:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.card-imagem.clean {
+    width: 100%;
+    background: #faf8f4;
+    padding: 12px;
+    border-bottom: 1px solid #f0ebe2;
+
+    height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-imagem.clean img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.card-conteudo.clean {
+    padding: 14px 16px;
+}
+
+.card-conteudo.clean h2 {
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+    color: #3b2f2a;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.descricao {
+    font-size: 0.95rem;
+    color: #776d67;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+/* Preço */
+.info-leilao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    color: #5a4b44;
+    font-size: 0.95rem;
+}
+
+.info-leilao strong {
+    color: #8b5734;
+}
+
+.btn-ver-mais {
+    display: block;
+    text-align: center;
+    background: #8b5734;
+    color: #fff;
+    padding: 9px 0;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background .25s;
+}
+
+.btn-ver-mais:hover {
+    background: #704526;
+}
